@@ -1,0 +1,226 @@
+/* RESET DASAR */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: #0A111F;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #F1C47B;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+  background: #ffffff;
+}
+
+.hero-text {
+  max-width: 50%;
+  z-index: 1;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #0A111F;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.skills {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skills img {
+  width: 40px;
+  height: 40px;
+}
+
+.foto-saya {
+  width: 380px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+/* ========== PENDIDIKAN ========== */
+.education {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.edu-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.edu-box {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.edu-box:hover {
+  transform: translateY(-10px);
+}
+
+.edu-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.edu-box h3 {
+  margin: 10px 0 5px 0;
+  color: #0A111F;
+}
+
+.edu-year {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.edu-desc {
+  font-size: 0.95em;
+  color: #555;
+}
+
+/* ========== EFEK KETIKAN ========== */
+.sm {
+  color: #0A111F;
+}
+
+.typing {
+  margin-top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #C2831C;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #C2831C;
+  margin-left: 2px;
+  animation: blink 0.7s infinite;
+  vertical-align: bottom;
+}
+
+@keyframes blink {
+  50% { background: transparent; }
+}
+
+/* ========== FORM KONTAK ========== */
+#kontak {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#kontakForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#kontakForm input,
+#kontakForm textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+#kontakForm input:focus,
+#kontakForm textarea:focus {
+  border-color: #C2831C;
+  outline: none;
+  box-shadow: 0 0 6px rgba(194, 131, 28, 0.4);
+}
+
+#kontakForm textarea {
+  resize: none;
+  height: 100px;
+}
+
+#kontakForm button {
+  background-color: #0A111F;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#kontakForm button:hover {
+  background-color: #C2831C;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}

@@ -52,11 +52,11 @@ document.getElementById("kontakForm").addEventListener("submit", async (e) => {
   const status = document.getElementById("status");
 
   try {
-    const res = await fetch("/api/kontak", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ nama, email, pesan })
-    });
+const res = await fetch("/api/kontak", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ nama, email, pesan })
+});
 
     const result = await res.json();
     status.textContent = result.status;
